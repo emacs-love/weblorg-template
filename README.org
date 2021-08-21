@@ -21,3 +21,6 @@ If everything and you want to deploy just run:
 You need to configure production URL on [[./publish.el][publish.el]]
 
 If you want to use Github pages don't forget to configure to use =docs= folder as your page content
+
+** Example
+You can check a running example on this [[http://emacs.love/weblorg-template/][link]]

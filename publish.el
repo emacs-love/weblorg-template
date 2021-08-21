@@ -33,7 +33,7 @@
 
 ;; Defaults to localhost:8000
 (if (string= (getenv "ENV") "prod")
-    (setq weblorg-default-url "https://yoursite.com"))
+    (setq weblorg-default-url "http://emacs.love/weblorg-template"))
 (if (string= (getenv "ENV") "local")
     (setq weblorg-default-url "http://localhost:8000"))
 
