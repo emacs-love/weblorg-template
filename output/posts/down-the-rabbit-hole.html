@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="utf-8">
+    <title>My personal weblorg - Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="John Coltrane" />
+    <meta name="description" content="my personal blog" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://yoursite.com//static/style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    
+  </head>
+  <body>
+    
+
+    
+    <header>
+      <h1 class="logo">
+        <a href="https://yoursite.com//">My personal weblorg</a>
+      </h1>
+      <a href="#main" class="visually-hidden">jump to main content</a>
+      <nav>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="https://yoursite.com//about">about</a></li>
+          <li class="menu__item"><a class="menu__link" href="https://yoursite.com//">blog</a></li>
+        </ul>
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link github" href="http://github.com/clarete/weblorg">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              <span class="visually-hidden">github</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+
+    
+    <main id="main">
+      
+<article class="post">
+  <h1 class="post__title">
+    Down the Rabbit-Hole
+  </h1>
+  <section class="post__meta">
+    
+      nov 26, 1865
+    
+  </section>
+  <section>
+    <p>
+Before we start with some prose, take a look at the <a href="https://orgmode.org/">Org-Mode</a> website!
+</p>
+
+<div id="outline-container-text-example" class="outline-2">
+<h2 id="text-example">Text Example</h2>
+<div class="outline-text-2">
+<p>
+Alice was beginning to get very tired of sitting by her sister on
+the bank, and of having nothing to do: once or twice she had peeped
+into the book her sister was reading, but it had no pictures or
+conversations in it, “and what is the use of a book,” thought Alice
+<b>“without pictures or conversations?”</b>
+</p>
+
+<p>
+So she was considering in her own mind (as well as she could, for
+the hot day made her feel very sleepy and stupid), whether the
+pleasure of making a daisy-chain would be worth the trouble of
+getting up and picking the daisies, when suddenly a White Rabbit
+with pink eyes ran close by her.
+</p>
+
+<p>
+There was nothing so <span class="underline">very</span> remarkable in that; nor did Alice think
+it so <span class="underline">very</span> much out of the way to hear the Rabbit say to itself,
+“Oh dear! Oh dear! I shall be late!” (when she thought it over
+afterwards, it occurred to her that she ought to have wondered at
+this, but at the time it all seemed quite natural); but when the
+Rabbit actually <span class="underline">took a watch out of its waistcoat-pocket</span>, and
+looked at it, and then hurried on, Alice started to her feet, for it
+flashed across her mind that she had never before seen a rabbit with
+either a waistcoat-pocket, or a watch to take out of it, and burning
+with curiosity, she ran across the field after it, and fortunately
+was just in time to see it pop down a large rabbit-hole under the
+hedge.
+</p>
+</div>
+
+<div id="outline-container-sub-section" class="outline-3">
+<h3 id="sub-section">Sub-section</h3>
+<div class="outline-text-3">
+<p>
+Here's an example of a piece of code:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span class="org-comment-delimiter">// </span><span class="org-comment">JavaScript API for compiling a grammar and binding</span>
+<span class="org-comment-delimiter">// </span><span class="org-comment">semantic actions to the generated parser</span>
+<span class="org-keyword">const</span> <span class="org-variable-name">grammar</span> = <span class="org-string">`</span>
+<span class="org-string">  Additive  &lt;- Multitive '+' Additive / Multitive</span>
+<span class="org-string">  Multitive &lt;- Primary '*' Multitive / Primary</span>
+<span class="org-string">  Primary   &lt;- '(' Additive ')' / Number</span>
+<span class="org-string">  Number    &lt;- [0-9]+</span>
+<span class="org-string">`</span>;
+<span class="org-keyword">const</span> <span class="org-variable-name">parser</span> = peg.pegc(grammar).bind({
+<span class="org-comment-delimiter">// </span><span class="org-comment">The name of the action must correspond to the name of the rule</span>
+<span class="org-comment-delimiter">// </span><span class="org-comment">present in the grammar string.  The function `visit` gives the</span>
+<span class="org-comment-delimiter">// </span><span class="org-comment">control over when the child nodes will be visited.  That allows</span>
+<span class="org-comment-delimiter">// </span><span class="org-comment">executing code before and after visiting happens.  This is very</span>
+<span class="org-comment-delimiter">// </span><span class="org-comment">useful during the code generation step on the compiler.</span>
+Additive: ({ visit }) =&gt; {
+  <span class="org-keyword">const</span> <span class="org-variable-name">v</span> = visit();
+    <span class="org-comment-delimiter">// </span><span class="org-comment">Ignore the string '+'</span>
+    <span class="org-keyword">return</span> Array.isArray(v) ? v[0] + v[2] : v;
+  },
+  Multitive: ({ visit }) =&gt; {
+    <span class="org-keyword">const</span> <span class="org-variable-name">v</span> = visit();
+    <span class="org-comment-delimiter">// </span><span class="org-comment">Ignore the string '*'</span>
+    <span class="org-keyword">return</span> Array.isArray(v) ? v[0] * v[2] : v;
+  },
+  Primary: ({ visit }) =&gt; {
+    <span class="org-keyword">const</span> <span class="org-variable-name">v</span> = visit();
+    <span class="org-comment-delimiter">// </span><span class="org-comment">Remove '(' and ')'</span>
+    <span class="org-keyword">return</span> Array.isArray(v) ? v[1] : v;
+  },
+  Number: ({ visit }) =&gt; {
+    <span class="org-keyword">const</span> <span class="org-variable-name">v</span> = visit();
+    <span class="org-keyword">const</span> <span class="org-variable-name">n</span> = Array.isArray(v) ? v.join(<span class="org-string">''</span>) : v;
+    <span class="org-keyword">return</span> parseInt(n, 10);
+  }
+});
+
+assertTrue(parser(<span class="org-string">'42'</span>) === 42);
+assertTrue(parser(<span class="org-string">'40+2*5'</span>) === 50);
+assertTrue(parser(<span class="org-string">'(40+2)*5'</span>) === 210);
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-unordered-bullet-points" class="outline-3">
+<h3 id="unordered-bullet-points">Unordered Bullet Points</h3>
+<div class="outline-text-3">
+<ul class="org-ul">
+<li><a href="https://www.gnu.org/software/emacs/">GNU Emacs</a></li>
+<li><a href="https://orgmode.org/">Org-Mode</a></li>
+<li><a href="https://emacs.love/weblorg/">weblorg</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+  </section>
+</article>
+
+    </main>
+
+
+    
+    
+    <footer class="footer">
+      <div class="ack">
+        Made with &#x2665; by
+        <a href="https://emacs.love/weblorg" target="_blank">
+          weblorg
+        </a>
+      </div>
+    </footer>
+    
+
+  </body>
+</html>

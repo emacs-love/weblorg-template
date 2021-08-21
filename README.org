@@ -1,0 +1,23 @@
+* Weblorg Template
+
+This template was created to help you quickly build your own website/blog with weblorg
+
+** Getting Starter
+Just create a repository using this template and start writing your posts and pages.
+
+** Development environment
+To develop your website/blog run this command:
+#+begin_src shell-script
+  $ ./unicorn.sh
+#+end_src
+This tools will watch files changes on =src= directory and will compile after any changes.
+
+** Deploy
+If everything and you want to deploy just run:
+#+begin_src shell-script
+  $ ./unicorn.sh deploy
+#+end_src
+
+You need to configure production URL on [[./publish.el][publish.el]]
+
+If you want to use Github pages don't forget to configure to use =output= folder as your page contetn
