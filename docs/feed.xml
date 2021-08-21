@@ -12,27 +12,27 @@
   <channel>
     <title>Simple Blog</title>
     <atom:link
-      href="https://yoursite.com//feed.xml"
+      href="https://yoursite.com/feed.xml"
       rel="self" type="application/rss+xml" />
-    <link>https://yoursite.com//</link>
+    <link>https://yoursite.com/</link>
     <description><![CDATA[]]></description>
     <language>en</language>
     <pubDate>qua, 19 ago 2020 00:00:00 -0300</pubDate>
-    <lastBuildDate>sáb, 21 ago 2021 16:39:01 -0300</lastBuildDate>
+    <lastBuildDate>sáb, 21 ago 2021 16:41:51 -0300</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <webMaster>web@master (Blog Author)</webMaster>
     <image>
-      <url>https://yoursite.com//media/img/8bitme.png</url>
+      <url>https://yoursite.com/media/img/8bitme.png</url>
       <title>Blog Author</title>
-      <link>https://yoursite.com//</link>
+      <link>https://yoursite.com/</link>
     </image>
 
     
     <item>
       <title>Welcome to weblorg</title>
-      <link>https://yoursite.com//posts/welcome-to-weblorg.html</link>
+      <link>https://yoursite.com/posts/welcome-to-weblorg.html</link>
       <author>Guilherme Guerra</author>
-      <guid isPermaLink="false">https://yoursite.com//posts/welcome-to-weblorg.html</guid>
+      <guid isPermaLink="false">https://yoursite.com/posts/welcome-to-weblorg.html</guid>
       
         <pubDate>qua, 19 ago 2020 00:00:00 -0300</pubDate>
       
@@ -57,9 +57,9 @@ You can do markups on your post just follow this cheatsheet
     
     <item>
       <title>Down the Rabbit-Hole</title>
-      <link>https://yoursite.com//posts/down-the-rabbit-hole.html</link>
+      <link>https://yoursite.com/posts/down-the-rabbit-hole.html</link>
       <author>Carroll, Lewis</author>
-      <guid isPermaLink="false">https://yoursite.com//posts/down-the-rabbit-hole.html</guid>
+      <guid isPermaLink="false">https://yoursite.com/posts/down-the-rabbit-hole.html</guid>
       
         <pubDate>dom, 26 nov 1865 00:00:00 -0306</pubDate>
       
