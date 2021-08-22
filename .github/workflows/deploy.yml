@@ -1,0 +1,11 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: nanzhong/weblorg
+    steps:
+    - uses: actions/checkout@v2
+    - name: Deploy
+      run: make deploy
