@@ -17,8 +17,8 @@
     <link>https://emacs.love/weblorg-template/</link>
     <description><![CDATA[]]></description>
     <language>en</language>
-    <pubDate>qua, 19 ago 2020 00:00:00 -0300</pubDate>
-    <lastBuildDate>sáb, 21 ago 2021 16:47:27 -0300</lastBuildDate>
+    <pubDate>Wed, 19 Aug 2020 00:00:00 +0000</pubDate>
+    <lastBuildDate>Sun, 22 Aug 2021 17:52:29 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <webMaster>web@master (Blog Author)</webMaster>
     <image>
@@ -34,7 +34,7 @@
       <author>Guilherme Guerra</author>
       <guid isPermaLink="false">https://emacs.love/weblorg-template/posts/welcome-to-weblorg.html</guid>
       
-        <pubDate>qua, 19 ago 2020 00:00:00 -0300</pubDate>
+        <pubDate>Wed, 19 Aug 2020 00:00:00 +0000</pubDate>
       
       <description><![CDATA[<p>
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit tempor tellus.  Donec pretium posuere tellus.  Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  Nulla posuere.  Donec vitae dolor.  Nullam tristique diam non turpis.  Cras placerat accumsan nulla.  Nullam rutrum.  Nam xcvestibulum accumsan nisl.
@@ -61,7 +61,7 @@ You can do markups on your post just follow this cheatsheet
       <author>Carroll, Lewis</author>
       <guid isPermaLink="false">https://emacs.love/weblorg-template/posts/down-the-rabbit-hole.html</guid>
       
-        <pubDate>dom, 26 nov 1865 00:00:00 -0306</pubDate>
+        <pubDate>Sun, 26 Nov 1865 00:00:00 +0000</pubDate>
       
       <description><![CDATA[<p>
 Before we start with some prose, take a look at the <a href="https://orgmode.org/">Org-Mode</a> website!
