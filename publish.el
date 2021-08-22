@@ -7,12 +7,6 @@
 ;;
 ;;; Code:
 
-;; Guarantee the freshest version of the weblorg
-(add-to-list 'load-path "../../")
-;; Also support loading weblorg form /opt/weblorg. This is for use with the nanzhong/weblorg image.
-;; See the volume mount in the Makefile for more context.
-(add-to-list 'load-path "/opt/weblorg")
-
 ;; Setup package management
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)

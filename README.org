@@ -13,14 +13,10 @@ To develop your website/blog run this command:
 This tools will watch files changes on =src= directory and will compile after any changes.
 
 ** Deploy
-If everything and you want to deploy just run:
-#+begin_src shell-script
-  $ make deploy
-#+end_src
+To make you life easier just push to Github and there is an action that will run the build and deploy on Github pages for you.
 
-You need to configure production URL on [[./publish.el][publish.el]]
+Don't forget to configure production URL on [[./publish.el][publish.el]] and configure to use =docs= folder as your page content on Github Pages configuration
 
-If you want to use Github pages don't forget to configure to use =docs= folder as your page content
 
 ** Example
 You can check a running example on this [[http://emacs.love/weblorg-template/][link]]

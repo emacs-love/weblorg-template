@@ -4,8 +4,27 @@ on: [push, pull_request]
 
 jobs:
   build:
-    runs-on: nanzhong/weblorg
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        emacs_version:
+          - snapshot
     steps:
+    - uses: purcell/setup-emacs@master
+      with:
+        version: ${{ matrix.emacs_version }}
     - uses: actions/checkout@v2
-    - name: Deploy
-      run: make deploy
+    - name: Clean site
+      run: |
+        if [ -d "docs" ]; then
+          rm -rf docs/*
+        fi
+    - name: Build site
+      run: make build
+    - name: Deploy build
+      run: |
+        git config user.name "${GITHUB_ACTOR}"
+        git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+        git add .
+        git commit -am "Deploy with ${GITHUB_WORKFLOW}"
+        git push --all -f https://${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git
